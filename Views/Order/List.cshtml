@@ -1,0 +1,8 @@
+﻿@model ProductsListViewModel
+
+@foreach (var p in Model.Products)
+{
+    @Html.PartialAsync("ProductSummary", p)
+}
+
+

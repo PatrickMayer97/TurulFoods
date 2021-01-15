@@ -1,0 +1,180 @@
+﻿@model IEnumerable<TurulFoods.Models.Product>
+
+@{
+    ViewData["Title"] = "OurMenu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    
+<h1 class="new "id="ourMenu">Menu</h1>
+    
+<hr />
+
+<div class="grid-container" id="divMenu">
+    <h1 id="flavors">Sweet Chimney's</h1>
+    <div class="grid-x grid-margin-x small-up-2 medium-up-3 ">
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/cinamon sugar.jpg" />
+            <h5>Cinnamon Sugar</h5>
+            <h5>Cinnamon Sugar, Organic Cane Sugar Glaze</h5>
+        </div>
+        
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/oreo.jpg" />
+            <h5>Oreo Crumbs</h5>
+            <h5>Oreo Crumbs, Organic Cane Sugar Glaze</h5>
+        </div>
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/walnut.jpg" />
+            <h5>Walnut</h5>
+            <h5>Ground Walnut, Organic Cane Sugar Glaze</h5>
+        </div>
+
+        <div class="cell">
+
+            <img class="thumbnail" id="image1" />
+            <h5>Biscoff Cookies</h5>
+            <h5>Image Coming Soon!!!!</h5>
+        </div>
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/coconut.jpg" />
+            <h5>Coconut</h5>
+            <h5>Sweetened Coconut Flakes, Organic Cane Sugar Glaze</h5>
+        </div>
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/vanilla sugar.jpg" />
+            <h5>Vanilla Sugar</h5>
+            <h5>Organic Cane Sugar and Vanilla Sugar, Organic Cane Sugar Glaze</h5>
+        </div>
+
+    </div>
+    <hr />
+    <h1 id="flavors">Savory Chimney's</h1>
+    <div class="grid-x grid-margin-x small-up-2 medium-up-3 ">
+        <div class="cell">            
+                <img class="thumbnail" id="image1" src="~/img/cheese rosemary.jpg" />
+                <h5>Rosemary and Cheddar </h5>
+                <h5>Parmesan, Aged Cheddar, Rosemary, Garlic</h5>
+        </div>
+
+        <div class="cell">            
+                <img class="thumbnail" id="image1" src="~/img/cheese bacon.jpg" />
+                <h5>Never Enough Bacon</h5>
+                <h5>100% Real Bacon Crumbles, Parmesan, Aged Cheddar, Garlic </h5>
+        </div>
+
+        <div class="cell">            
+                <img class="thumbnail" id="image1" src="~/img/cheese jalapenho.png" />
+                <h5>Jalapeno and Cheddar </h5>  
+                <h5>Jalapeños, Aged Cheddar </h5>
+        </div>
+    </div>
+</div>
+
+@*<article class="grid-container">
+    <h1 id="flavors">Sweet Chimney's</h1>
+    <div class="grid-x grid-margin-x small-up-2 medium-up-3 ">
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+            <h5>hello</h5>
+        </div>
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+        </div>
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+        </div>
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+        </div>
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+        </div>
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+        </div>
+    </div>
+    
+</article>
+<hr />
+
+<article class="grid-container">
+    <h1 id="flavors">Savory Chimney's</h1>
+    <div class="grid-x grid-margin-x small-up-2 medium-up-3 ">
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+            <h5>hello</h5>
+        </div>
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+        </div>
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+        </div>
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+        </div>
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+        </div>
+
+        <div class="cell">
+            <img class="thumbnail" id="image1" src="~/img/OIP.jpg" />
+        </div>
+    </div>
+
+</article>*@
+
+
+@*<table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ProductID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Category)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>*@

@@ -1,0 +1,97 @@
+﻿body {
+    background-color: #191919 !important;
+    color: #fefefe;
+}
+
+#flavors {
+    text-align:center;
+}
+#ourMenu {
+    
+    text-indent: 160px;
+    
+}
+#covid {
+    text-indent: 160px;
+}
+#para1{
+    text-align: center;
+}
+.emblemImage {
+    position: relative;
+}
+#emblem {
+
+    position: absolute;
+    bottom: -550px;
+    right: 350px;
+    width: 350px;
+    height: 400px;
+    
+}
+#aboutUs {
+    text-indent: 160px;
+}
+footer {
+    background-color: #202020;
+}
+#footer1 {
+    text-align:center;
+}
+
+#indentFT {
+    text-indent:100px;
+}
+#topbar {
+    background-color: #202020;
+}
+
+#shoppingCart{
+    
+    color: aqua;
+}
+
+#image1 {
+    width: 150px;
+    height: 200px;
+}
+#slideImg{
+    
+    /*width: 1500px;
+    height: 900px;*/
+}
+
+#divMenu {
+    text-align: center;
+}
+#indentEvent {
+    text-indent: 165px;
+}
+
+
+
+@font-face {
+    font-family: '[set]Foundicons';
+    src: url('fonts/[set]_foundicons.eot');
+    src: url('fonts/[set]_foundicons.eot?#iefix') format('embedded-opentype'), url('fonts/[set]_foundicons.woff') format('woff'), url('fonts/[set]_foundicons.ttf') format('truetype'), url('fonts/[set]_foundicons.svg#[set]Foundicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class*="foundicon-"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+    [class*="foundicon-"]:before {
+        font-family: "[set]Foundicons";
+        font-weight: normal;
+        font-style: normal;
+        text-decoration: inherit;
+    }

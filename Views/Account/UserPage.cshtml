@@ -1,0 +1,94 @@
+﻿@model IEnumerable<TurulFoods.Models.Product>
+@*main copy*@
+@{
+    ViewData["Title"] = "UserPage";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+    <body>
+
+        <div class="orbit bullets-inside" role="region" aria-label="Favorite Space Pictures" data-orbit>
+            <ul class="orbit-container">
+
+                <li class="is-active orbit-slide">
+                    <img class="orbit-image" src="~/img/chimneys.jpg" id="slideImg"
+                         alt="Space">
+
+                </li>
+
+            </ul>
+
+
+        </div>
+
+        <h2 id="aboutUs">About Us</h2>
+        <hr />
+        <div>
+            <p id="para1">
+                We truly hope that everyone has been safe and healthy during this pandemic!<br />
+                Unfortunately,
+                we don't have a definite timeline for when the markets will re open. <br />
+                But, we are now offering delivery of chimney cakes for a limited time! <br /><br />
+
+
+
+                If you order a minimum of 5 chimney cakes we will gladly deliver them for<br />
+                free for those that live in the greater Seattle and Tacoma area.<br />
+                You can email your order to turulfoods@gmail.com. Please give at<br />
+                least 24 hours notice for your order to be fulfilled. <br /><br />
+
+                We truly miss going to the markets and being apart of the wonderful community!<br />
+                We will keep you updated on what will be happening in the new upcoming<br />
+                weeks! Thank you for all your support! We appreciate it! <br /><br />
+
+                The Turul Foods Family
+            </p>
+        </div>
+        <hr />
+        <br />
+        <div class="emblemImage"><img id="emblem" src="~/img/g4813-2.png" /></div>
+        <div>
+            <h4 style="color: red" id="aboutUs">So...What is a Chimney Cake?</h4>
+            <p style="margin-left: 10em">
+                A chimney cake (or in Hungarian "Kürtős Kalács")  is a traditional pastry<br /> from Hungary.
+                It is wrapped around a cylindrical wooden spool and slowly<br /> turned over a gas grill.
+                The dough is brushed with oil and coated with sugar.<br /> Once baked, it creates a crunchy
+                outside with a soft and fluffy dough in the<br /> inside. After this, there are a variety of
+                toppings that can be placed on top of<br /> the sugary glaze!
+            </p>
+        </div>
+
+        <br />
+        <div>
+            <h4 id="aboutUs">Hungarian Delicacies</h4>
+            <p style="margin-left: 10em">
+                Our current menu only includes Chimney Cakes but we are going to be<br />
+                adding Langos (Hungarian Fried Bread) and Goulash soon! Stay Tuned!
+            </p>
+        </div>
+        <br />
+        <div>
+            <h4 style="color: green" id="aboutUs">A Tradition of Taste</h4>
+            <p style="margin-left: 10em">
+                Turul Foods was founded for our passion for sweets and the love of our<br />
+                Hungarian heritage. We are proud to serve the Pacific Northwest!
+            </p>
+        </div>
+        <br />
+        <div>
+            <h4 id="aboutUs">Our Chimney Cake</h4>
+            <p style="margin-left: 10em">
+                We use seven simple ingredients to make our delicious dough that is<br />
+                Lactose-Free and Vegan Friendly.<br /><br />
+
+                In our Menu we include Sweet and Savory toppings with vegan options. Just<br />
+                ask our staff!
+            </p>
+        </div>
+
+        <div id="aboutUs">
+            <a asp-controller="Order" asp-action="Order">
+                <button class="primary hollow button">Order Here</button>
+            </a>
+        </div>
+
+    </body>

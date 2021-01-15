@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <environment include="Development">
+        <link rel="stylesheet" asp-href-include="/lib/node_modules/foundation-sites/dist/**/*.min.css" asp-href-exclude="**/*-reboot*,**/*-grid*" />
+        <link rel="stylesheet" href="~/css/site2.css?id=56" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/plugins/foundation.core.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/foundation.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/plugins/foundation.dropdown.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/plugins/foundation.dropdownMenu.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/plugins/foundation.util.keyboard.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/plugins/foundation.util.box.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/js/plugins/foundation.util.triggers.js" defer></script>
+
+        <script src="~/js/site.js" defer></script>
+    </environment>
+    <title>TurulFoods</title>
+    
+</head>
+<body>
+
+    <div class="top-bar black" id="topbar">
+        <div class="row column">
+            <div class="top-bar-left">
+
+
+
+                <a style="color: white" asp-controller="Account" asp-action="UserPage"><small>Turul Foods</small></a>
+
+
+            </div>
+            
+            <div class="top-bar-right">
+                <a style="color:ghostwhite" asp-controller="Account" asp-action="UserPage">Home</a>
+                <a style="color:ghostwhite" asp-controller="Account" asp-action="EventsAccount">Events</a>
+                <a style="color:ghostwhite" asp-controller="Home" asp-action="Index">Logout</a>
+                <a style="color:ghostwhite" asp-controller="Order" asp-action="Order">Order</a>
+                
+                    
+                    <div class="col-4 text-right">
+                    @await Component.InvokeAsync("CartSummary")
+                    </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+    <div class="cell">
+        <div class="off-canvas-wrapper">
+            <div class="cell">
+                <div class="off-canvas-wrapper">
+                    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
+
+                        <div aside class="top-bar-right">
+
+                            <div class="topnav" data-responsive-toggle="myTopnav">
+                                <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+
+                            </div>
+
+                            <div class="topnav" id="myTopnav">
+
+                                <div class="top-bar-right">
+                                    <a style="color:ghostwhite" asp-controller="Account" asp-action="UserPage">Home</a>
+                                    <a style="color:ghostwhite" asp-controller="Account" asp-action="EventsAccount">Events</a>
+                                    <a style="color:ghostwhite" asp-controller="Home" asp-action="Index">Logout</a>
+                                    <a style="color:ghostwhite" asp-controller="Order" asp-action="Order">Order</a>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    
+                    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
+                        Your menu or Off-canvas content goes here
+                    </div>
+                    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas>
+                        Your menu or Off-canvas content goes here
+                    </div>
+
+                    <div class="off-canvas-content" data-off-canvas-content>
+                        @RenderBody()
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <h4 id="footer1">Turul Foods</h4>
+        <h4 id="footer1">Seattle, WA</h4>
+        <h3 id="aboutUs">Social</h3>
+        <hr />
+        <div class="social-links">
+            <div class="row" style="text-align: center; ">
+                
+                <a href="https://www.facebook.com/turulfoods"><i class="fa fa-facebook" aria-hidden="true" style="font-size: 40px"></i></a>
+                
+                <a href="https://www.instagram.com/turulfoods/"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 40px"></i></a>
+                
+                <a href="https://www.yelp.com/biz/turul-foods-seattle"><i class="fi-social-yelp" aria-hidden="true" style="font-size: 40px"></i></a>
+                
+
+            </div>
+        </div>
+        <h5 id="indentFT">Copyright © 2020 Turul Foods - All Rights Reserved.</h5>
+    </footer>
+   
+</body>
+</html>

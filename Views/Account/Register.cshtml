@@ -1,0 +1,28 @@
+﻿@model Register
+
+@{
+    ViewData["Title"] = "Events";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h4>Register</h4>
+</div>
+<div asp-validation-summary="All"></div>
+<form method="post">
+    <div>
+        <label style="color:ghostwhite" asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+
+    <div>
+        <label style="color:ghostwhite" asp-for="Email"></label>
+        <input asp-for="Email" />
+    </div>
+    <div>
+        <label style="color:ghostwhite" asp-for="Password"></label>
+        <input asp-for="Password" />
+    </div>
+    <button type="submit" class="primary hollow button">Register New User</button><br />
+    <a asp-controller="Home" asp-action="Index">Cancel</a>
+</form>
